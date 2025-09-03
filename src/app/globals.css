@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0b12;
+  --fg: #eaeaea;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Simple skeleton */
+.skeleton {
+  @apply animate-pulse bg-gray-700/40 rounded;
+}
+
+/* Smooth default transitions */
+.transition-base {
+  transition: all 150ms ease;
+}
+
+/* Animate position changes: flash green when improving, red when dropping */
+.pos-up {
+  animation: pos-up 600ms ease;
+}
+.pos-down {
+  animation: pos-down 600ms ease;
+}
+
+@keyframes pos-up {
+  0% { background-color: rgba(34,197,94,0.25); }
+  100% { background-color: transparent; }
+}
+@keyframes pos-down {
+  0% { background-color: rgba(239,68,68,0.25); }
+  100% { background-color: transparent; }
+}
