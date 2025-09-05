@@ -1,4 +1,4 @@
-# F1 Dash Rebuild
+# F1 Dash
 
 A Next.js + TypeScript dashboard scaffold inspired by Delta Dash. Ships with Tailwind, React Query, a basic layout, and example pages using mocked data. Hook up real APIs later via `src/lib/api`.
 
